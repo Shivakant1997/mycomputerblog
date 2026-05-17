@@ -9,13 +9,14 @@
         header { background-color: #004085; color: white; padding: 25px; font-size: 26px; font-weight: bold; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .container { max-width: 850px; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 15px rgba(0,0,0,0.05); }
         h2 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
-        h3 { color: #28a745; font-size: 18px; margin-top: 15px; }
         p { font-size: 16px; color: #333333; line-height: 1.7; text-align: justify; }
         ul { font-size: 16px; color: #333333; line-height: 1.7; text-align: left; padding-left: 20px; }
         .highlight { background-color: #fff3cd; padding: 2px 6px; border-radius: 4px; font-weight: bold; color: #856404; }
         .btn-container { text-align: center; margin-top: 35px; }
-        .btn { display: inline-block; padding: 14px 28px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; padding: 14px 28px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 10px; }
         .btn:hover { background-color: #218838; }
+        .btn-about { background-color: #007bff; }
+        .btn-about:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
@@ -23,6 +24,11 @@
     <header>💻 शिवाकांत चौधरी कंप्यूटर ब्लॉग 💻<br><span style="font-size: 16px; font-weight: normal;">ओ लेवल (O Level) परीक्षा की तैयारी के लिए सबसे बेस्ट नोट्स</span></header>
 
     <div class="container">
+        
+        <div style="text-align: right; margin-bottom: 20px;">
+            <a href="about.html" style="text-decoration: none; font-weight: bold; color: #007bff; border: 2px solid #007bff; padding: 8px 15px; border-radius: 5px;">👨‍💻 ब्लॉग के लेखक (Author) के बारे में जानें →</a>
+        </div>
+
         <p style="font-size: 18px; font-weight: bold; text-align: center; color: #555;">स्वागत है आपका हमारे कंप्यूटर स्टडी ब्लॉग पर! यहाँ आपको IT Tools, HTML और वेब डिजाइनिंग के सबसे आसान नोट्स हिंदी में मिलेंगे।</p>
 
         <h2>1. कंप्यूटर की पीढ़ियां (Generations of Computer)</h2>
@@ -31,7 +37,7 @@
             <li><b>प्रथम पीढ़ी (1946-1959):</b> इसमें <span class="highlight">वैक्यूम ट्यूब (Vacuum Tubes)</span> का उपयोग किया गया था। ये आकार में बहुत बड़े होते थे।</li>
             <li><b>द्वितीय पीढ़ी (1959-1965):</b> वैक्यूम ट्यूब की जगह <span class="highlight">ट्रांजिस्टर (Transistors)</span> का उपयोग शुरू हुआ।</li>
             <li><b>तृतीय पीढ़ी (1965-1971):</b> इसमें <span class="highlight">IC (Integrated Circuit)</span> का उपयोग किया गया, जिससे कंप्यूटर छोटे और तेज़ हो गए।</li>
-            <li><b>चतुर्थ पीढ़ी (1971-1980):</b> <span class="highlight">माइक्रोप्रोसेसर (VLSI)</span> का आगमन हुआ, जिससे पर्सनल कंप्यूटर (PC) बने।</li>
+            <li><b>चतुर्थ पीढ़ी (1971-1980):</b> <span class="highlight">माइक्रोप्रोсеसर (VLSI)</span> का आगमन हुआ, जिससे पर्सनल कंप्यूटर (PC) बने।</li>
             <li><b>पंचम पीढ़ी (1980 से अब तक):</b> यह <span class="highlight">AI (Artificial Intelligence - कृत्रिम बुद्धिमत्ता)</span> पर आधारित है।</li>
         </ul>
 
@@ -46,7 +52,7 @@
         <p>वेब पेज बनाने के लिए HTML टैग्स का ज्ञान होना बहुत जरूरी है:</p>
         <ul>
             <li><code>&lt;html&gt;</code> - यह पूरे वेब पेज का मुख्य कंटेनर होता है।</li>
-            <li><code>&lt;head&gt;</code> - इसमें पेज की गुप्त जानकारी और टाइटल (Title) होता है।</li>
+            <li><code>&lt;head&gt;</code> - इसमें पेज की गुप्त जानकारी और टाइटल (Title) होता. है।</li>
             <li><code>&lt;body&gt;</code> - वेबसाइट पर दिखने वाला सारा सामान इसी टैग के अंदर लिखा जाता है।</li>
             <li><code>&lt;h1&gt; से &lt;h6&gt;</code> - इसका उपयोग हेडिंग (Heading) बनाने के लिए किया जाता है।</li>
             <li><code>&lt;p&gt;</code> - इसका उपयोग पैराग्राफ लिखने के लिए होता है।</li>
@@ -54,6 +60,8 @@
 
         <div class="btn-container">
             <a href="https://wa.me/919682204065" class="btn" target="_blank">💬 हमारे व्हाट्सएप ग्रुप से जुड़ें (फ्री नोट्स)</a>
+            <br>
+            <a href="about.html" class="btn btn-about">👨‍💻 इस ब्लॉग के मालिक (Author) कौन हैं?</a>
         </div>
     </div>
 
