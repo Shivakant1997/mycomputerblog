@@ -18,6 +18,11 @@
         .chapter-item { font-weight: bold; margin-bottom: 15px; color: #333; }
         .chapter-content { font-weight: normal; font-size: 15px; color: #555; margin-left: 15px; text-align: justify; }
         
+        /* हाईलाइट रंग */
+        .hl-blue { color: #0056b3; font-weight: bold; background: #e6f0fa; padding: 2px 6px; border-radius: 4px; }
+        .hl-green { color: #15803d; font-weight: bold; background: #f0fdf4; padding: 2px 6px; border-radius: 4px; }
+        .hl-orange { color: #d97706; font-weight: bold; background: #fffbeb; padding: 2px 6px; border-radius: 4px; }
+        
         .code-box { background: #2d3748; color: #f7fafc; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 14px; margin: 8px 0; overflow-x: auto; }
         .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 2px solid #eee; }
         .btn-about { display: inline-block; background-color: #6c757d; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; }
@@ -36,51 +41,57 @@
         <div class="chapter-list">
             <div class="chapter-item">
                 1. कंप्यूटर का परिचय और पीढ़ियां
-                <div class="chapter-content">कंप्यूटर एक इलेक्ट्रॉनिक डिवाइस है जो इनपुट लेकर प्रोसेस करता है और आउटपुट देता है। प्रथम पीढ़ी में वैक्यूम ट्यूब, द्वितीय में ट्रांजिस्टर, तृतीय में आईसी (IC) और चतुर्थ पीढ़ी में माइक्रोप्रोसेसर का उपयोग हुआ।</div>
+                <div class="chapter-content">
+                    कंप्यूटर एक इलेक्ट्रॉनिक डिवाइस है जो इनपुट लेकर प्रोसेस करता है। इसके मुख्य भाग <span class="hl-blue">CPU (सेंट्रल प्रोसेसिंग यूनिट)</span>, <span class="hl-blue">ALU (अर्थमैटिक लॉजिक यूनिट)</span>, और मेमोरी यूनिट होते हैं। प्रथम पीढ़ी में <span class="hl-blue">वैक्यूम ट्यूब</span> और चतुर्थ पीढ़ी में <span class="hl-blue">माइक्रोप्रोसेसर</span> का उपयोग हुआ।
+                </div>
             </div>
         </div>
     </div>
 
     <div class="book-section" style="border-left-color: #28a745;">
         <div class="book-title" style="color: #28a745;">📗 मॉड्यूल 2: M2-R5 - Web Designing & Publishing</div>
-        <p style="font-weight: bold; color: #555;">वेब डिजाइनिंग और HTML के सबसे महत्वपूर्ण नोट्स नीचे पढ़ें:</p>
-        
         <div class="chapter-list">
             <div class="chapter-item">
-                1. HTML क्या है? (Introduction to HTML)
+                1. HTML और टैग्स का परिचय
                 <div class="chapter-content">
-                    HTML का पूरा नाम <b>HyperText Markup Language</b> है। इसका उपयोग वेब पेज (Web Page) का ढांचा या स्ट्रक्चर बनाने के लिए किया जाता है। यह कोई प्रोग्रामिंग भाषा नहीं है, बल्कि एक मार्कअप भाषा है जो टैग्स (Tags) पर काम करती है।
-                </div>
-            </div>
-            
-            <div class="chapter-item">
-                2. टैग और एट्रिब्यूट (HTML Tags and Attributes)
-                <div class="chapter-content">
-                    • <b>Tags:</b> HTML में कोड को कोणीय कोष्ठक <code>&lt; &gt;</code> के अंदर लिखा जाता है। जैसे: पैराग्राफ के लिए <code>&lt;p&gt;</code> और हेडिंग के लिए <code>&lt;h1&gt;</code>।<br>
-                    • <b>Attributes:</b> यह टैग के बारे में अतिरिक्त जानकारी देता है। जैसे लिंक लगाने के लिए <code>href</code> एट्रिब्यूट:
-                    <div class="code-box">&lt;a href="https://google.com"&gt;गूगल पर जाएं&lt;/a&gt;</div>
-                </div>
-            </div>
-            
-            <div class="chapter-item">
-                3. एचटीएमएल लिस्ट (HTML Lists)
-                <div class="chapter-content">
-                    वेब पेज पर लिस्ट बनाने के लिए दो मुख्य टैग होते हैं:<br>
-                    • <b>Ordered List (&lt;ol&gt;):</b> इसमें नंबर (1, 2, 3) या एबीसीडी (A, B, C) आती है।<br>
-                    • <b>Unordered List (&lt;ul&gt;):</b> इसमें बुलेट्स या डॉट्स (•) आते हैं।
+                    <span class="hl-green">HTML (HyperText Markup Language)</span> का उपयोग वेब पेज का स्ट्रक्चर बनाने में होता है। यह टैग्स पर काम करती है। इसमें <span class="hl-green">&lt;ol&gt;</span> से नम्बर्ड लिस्ट और <span class="hl-green">&lt;ul&gt;</span> से बुलेट लिस्ट बनती है। एट्रिब्यूट टैग की विशेषता बताते हैं।
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="book-section" style="border-left-color: #fd7e14; opacity: 0.8;">
-        <div class="book-title" style="color: #fd7e14;">📙 मॉड्यूल 3: M3-R5 - Programming through Python</div>
-        <p style="font-style: italic; color: #777;">⏳ इस किताब के पाइथन प्रोग्रामिंग के नोट्स अगली अपडेट में जोड़े जाएंगे...</p>
+    <div class="book-section" style="border-left-color: #fd7e14;">
+        <div class="book-title" style="color: #fd7e14;">📙 मॉड्यूल 3: M3-R5 - Programming & Problem Solving through Python</div>
+        <p style="font-weight: bold; color: #555;">पाइथन प्रोग्रामिंग के सबसे महत्वपूर्ण परीक्षा उपयोगी नोट्स:</p>
+        
+        <div class="chapter-list">
+            <div class="chapter-item">
+                1. पाइथन क्या है? (Introduction to Python)
+                <div class="chapter-content">
+                    <span class="hl-orange">Python</span> एक सरल, हाई-लेवल भाषा है जिसका आविष्कार <span class="hl-orange">Guido van Rossum</span> ने 1991 में किया था। यह केस-सेंसिटिव (Case-Sensitive) भाषा है।
+                </div>
+            </div>
+            
+            <div class="chapter-item">
+                2. वेरिएबल्स और डेटा टाइप्स (Variables & Data Types)
+                <div class="chapter-content">
+                    डेटा स्टोर करने के लिए <span class="hl-orange">Variables</span> का उपयोग कंटेनर की तरह होता है। पाइथन में मुख्य रूप से <span class="hl-orange">int</span> (पूर्णांक संख्या), <span class="hl-orange">float</span> (दशमलव संख्या), और <span class="hl-orange">str</span> (टेक्स्ट) डेटा टाइप्स होते हैं।
+                </div>
+            </div>
+            
+            <div class="chapter-item">
+                3. लूप्स का उपयोग (Loops in Python)
+                <div class="chapter-content">
+                    किसी कोड को बार-बार चलाने के लिए लूप का उपयोग करते हैं। इसके लिए <span class="hl-orange">For Loop</span> और <span class="hl-orange">While Loop</span> का उपयोग किया जाता है।
+                    <div class="code-box"># 1 से 5 तक गिनती छापने का कोड<br>for i in range(1, 6):<br>    print(i)</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="book-section" style="border-left-color: #dc3545; opacity: 0.8;">
         <div class="book-title" style="color: #dc3545;">📓 मॉड्यूल 4: M4-R5 - Internet of Things (IoT)</div>
-        <p style="font-style: italic; color: #777;">⏳ इस किताब के आईओटी (IoT) के नोट्स बहुत जल्द लाइव होंगे...</p>
+        <p style="font-style: italic; color: #777;">⏳ इस किताब के आईओटी (IoT) के नोट्स अगली अपडेट में जोड़े जाएंगे...</p>
     </div>
 
     <div class="footer-nav">
