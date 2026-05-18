@@ -25,6 +25,14 @@
         .hl-red { color: #b91c1c; font-weight: bold; background: #fef2f2; padding: 2px 6px; border-radius: 4px; }
         
         .code-box { background: #2d3748; color: #f7fafc; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 14px; margin: 8px 0; overflow-x: auto; }
+        
+        /* स्पेशल कमाई वाले डिब्बे का स्टाइल */
+        .earning-section { background: #fff; border: 2px dashed #28a745; border-radius: 12px; padding: 20px; margin-top: 30px; text-align: center; box-shadow: 0 4px 12px rgba(40,167,69,0.1); }
+        .earning-title { font-size: 22px; color: #28a745; font-weight: bold; margin-top: 0; }
+        .service-box { background: #f4fbf6; border: 1px solid #c3e6cb; border-radius: 8px; padding: 15px; margin: 15px 0; text-align: left; }
+        .service-title { font-size: 18px; color: #155724; font-weight: bold; margin: 0 0 5px 0; }
+        .btn-whatsapp { display: inline-block; background-color: #25d366; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; box-shadow: 0 4px 10px rgba(37,211,102,0.3); margin-top: 5px; }
+        
         .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 2px solid #eee; }
         .btn-about { display: inline-block; background-color: #6c757d; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; }
     </style>
@@ -80,37 +88,30 @@
         <div class="book-title" style="color: #dc3545;">📓 मॉड्यूल 4: M4-R5 - Internet of Things (IoT) and its Applications</div>
         <p style="font-weight: bold; color: #555;">इंटरनेट ऑफ थिंग्स (IoT) के सभी महत्वपूर्ण अध्यायों का पूरा निचोड़:</p>
         <div class="chapter-list">
-            <div class="chapter-item">
-                1. IoT का परिचय (Introduction to IoT)
-                <div class="chapter-content">
-                    <span class="hl-red">IoT (Internet of Things)</span> एक ऐसा नेटवर्क है, जहाँ भौतिक वस्तुएं इंटरनेट से जुड़कर डेटा शेयर करती हैं। इसके जनक <span class="hl-red">Kevin Ashton</span> हैं।
-                </div>
-            </div>
-            <div class="chapter-item">
-                2. सेंसर और एक्चुएटर (Sensors & Actuators)
-                <div class="chapter-content">
-                    • <span class="hl-red">Sensors:</span> बाहरी वातावरण से भौतिक जानकारी (जैसे तापमान, नमी) इकट्ठा करते हैं।<br>
-                    • <span class="hl-red">Actuators:</span> सिग्नल्स के आधार पर फिजिकल मूवमेंट या काम (जैसे मोटर चलाना) करते हैं।
-                </div>
-            </div>
-            <div class="chapter-item">
-                3. बिल्डिंग IoT सिस्टम (Arduino UNO)
-                <div class="chapter-content">
-                    <span class="hl-red">Arduino UNO</span> एक ओपन-सोर्स माइक्रोकंट्रोलर बोर्ड है, जिसका उपयोग सेंसर्स को नियंत्रित करने और कोडिंग को रन करने के लिए किया जाता है।
-                </div>
-            </div>
-            <div class="chapter-item">
-                4. प्रोटोकॉल्स (IoT Protocols)
-                <div class="chapter-content">
-                    डेटा ट्रांसफर के लिए हल्के और सुरक्षित प्रोटोकॉल्स का उपयोग होता है, जैसे <span class="hl-red">MQTT</span> (Message Queuing Telemetry Transport) और <span class="hl-red">CoAP</span>।
-                </div>
-            </div>
-            <div class="chapter-item">
-                5. सुरक्षा और सॉफ्ट स्किल्स (Security & Soft Skills)
-                <div class="chapter-content">
-                    IoT डिवाइसेज की सुरक्षा के लिए <span class="hl-red">Data Encryption</span> जरूरी है। इसके साथ ही छात्रों के व्यावसायिक विकास के लिए व्यक्तित्व और सॉफ्ट स्किल्स का ज्ञान भी आवश्यक है।
-                </div>
-            </div>
+            <div class="chapter-item">1. IoT का परिचय <div class="chapter-content"><span class="hl-red">IoT</span> भौतिक वस्तुओं का नेटवर्क है जो इंटरनेट से डेटा शेयर करती हैं। जनक <span class="hl-red">Kevin Ashton</span> हैं।</div></div>
+            <div class="chapter-item">2. सेंसर और एक्चुएटर <div class="chapter-content"><span class="hl-red">Sensors</span> जानकारी इकट्ठा करते हैं और <span class="hl-red">Actuators</span> फिजिकल मूवमेंट (जैसे मोटर चलाना) करते हैं।</div></div>
+            <div class="chapter-item">3. बिल्डिंग IoT सिस्टम <div class="chapter-content"><span class="hl-red">Arduino UNO</span> एक माइक्रोकंट्रोलर बोर्ड है जिसका उपयोग सेंसर्स को नियंत्रित करने में होता है।</div></div>
+            <div class="chapter-item">4. प्रोटोकॉल्स <div class="chapter-content">डेटा ट्रांसफर के लिए हल्के प्रोटोकॉल्स जैसे <span class="hl-red">MQTT</span> और <span class="hl-red">CoAP</span> का उपयोग होता है।</div></div>
+            <div class="chapter-item">5. सुरक्षा और सॉफ्ट स्किल्स <div class="chapter-content">सुरक्षा के लिए <span class="hl-red">Data Encryption</span> जरूरी है। साथ ही व्यावसायिक विकास के लिए सॉफ्ट स्किल्स आवश्यक हैं।</div></div>
+        </div>
+    </div>
+
+    <div class="earning-section">
+        <div class="earning-title">💼 शिवाकांत डिजिटल सेवा एवं करियर केंद्र</div>
+        <p style="margin: 5px 0; color: #555; font-weight: bold;">क्या आप परीक्षा पास करना चाहते हैं या एक अच्छी प्राइवेट नौकरी ढूंढ रहे हैं? नीचे दी गई सेवाओं का लाभ उठाएं:</p>
+        
+        <div class="service-box">
+            <div class="service-title">🎯 ओ लेवल (O Level) 100% गारंटेड पास गेस पेपर्स (PDF)</div>
+            <p style="margin: 5px 0; font-size: 14px; color: #666;">परीक्षा में निश्चित सफलता के लिए चारों मॉड्यूल्स के सबसे महत्वपूर्ण प्रश्नों का संग्रह उत्तर सहित प्राप्त करें।</p>
+            <p style="margin: 5px 0; font-weight: bold; color: #dc3545;">💵 कीमत: मात्र ₹49 (प्रति मॉड्यूल)</p>
+            <a href="https://wa.me/919125585094?text=Hi%20Sir,%20mujhe%20O%20Level%20ka%20Guess%20Paper%20PDF%20chahiye" class="btn-whatsapp" target="_blank">💬 व्हाट्सएप पर PDF मंगाएं</a>
+        </div>
+
+        <div class="service-box">
+            <div class="service-title">💼 प्राइवेट कंपनी जॉब्स - ऑनलाइन फॉर्म एवं रिज्यूमे सर्विस</div>
+            <p style="margin: 5px 0; font-size: 14px; color: #666;">विभिन्न प्राइवेट कंपनियों (जैसे मशीन ऑपरेटर, पैकिंग आदि) में नौकरी पाने के लिए बिल्कुल सही तरीके से ऑनलाइन फॉर्म भरवाएं और प्रोफेशनल CV/Resume तैयार करवाएं।</p>
+            <p style="margin: 5px 0; font-weight: bold; color: #007bff;">🛠️ संचालक: शिवाकांत चौधरी (प्रयागराज)</p>
+            <a href="https://wa.me/919125585094?text=Hi%20Sir,%20mujhe%20Private%20Job%20ka%20form%20bhrwana%20hai" class="btn-whatsapp" target="_blank">💬 फॉर्म भरवाने के लिए संपर्क करें</a>
         </div>
     </div>
 
