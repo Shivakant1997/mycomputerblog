@@ -3,56 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>लेखक के बारे में - शिवाकांत कंप्यूटर ब्लॉग</title>
+    <title>लेखक परिचय - शिवकांत चौधरी</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f0f4f8; margin: 0; padding: 0; }
-        header { background-color: #004085; color: white; padding: 25px; font-size: 26px; font-weight: bold; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 15px rgba(0,0,0,0.05); }
-        h2 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 8px; margin-top: 25px; font-size: 22px; }
-        p { font-size: 16px; color: #333333; line-height: 1.7; text-align: justify; }
-        ul { font-size: 16px; color: #333333; line-height: 1.7; padding-left: 20px; }
-        .profile-card { background-color: #e9ecef; padding: 20px; border-radius: 8px; margin-bottom: 25px; text-align: center; border-left: 5px solid #0056b3; }
-        .profile-name { font-size: 22px; font-weight: bold; color: #004085; margin: 0; }
-        .profile-role { font-size: 16px; color: #555; font-style: italic; margin-top: 5px; }
-        .btn-container { text-align: center; margin-top: 30px; }
-        .btn { display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: 10px; }
-        .btn:hover { background-color: #0056b3; }
-        .btn-home { background-color: #6c757d; }
-        .btn-home:hover { background-color: #5a6268; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .about-card {
+            max-width: 650px;
+            background: white;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            background: #007bff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        .intro-text {
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #007bff;
+        }
+        
+        /* बिजनेस धमाका बॉक्स - अट्रैक्शन के लिए */
+        .business-box {
+            background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
+            padding: 2px;
+            border-radius: 12px;
+            margin: 30px 0 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .business-inner {
+            background: #fff8f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .business-title {
+            color: #d9534f;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            animation: pulse 2s infinite;
+        }
+        .business-text {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        
+        /* एक्शन बटन */
+        .btn-live {
+            display: inline-block;
+            background-color: #dc3545;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 18px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+            transition: 0.3s;
+        }
+        .btn-live:hover {
+            transform: scale(1.05);
+            background-color: #c82333;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 25px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-back:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <header>👨‍💻 लेखक का परिचय (Author Profile) 👨‍💻</header>
+<div class="about-card">
+    <div class="profile-img">👨‍💻</div>
+    
+    <h1>शिवकांत चौधरी</h1>
+    <p class="subtitle">शिक्षा और डिजिटल उद्यमी (Digital Entrepreneur)</p>
+    
+    <div class="intro-text">
+        नमस्ते! मैं प्रयागराज, उत्तर प्रदेश का रहने वाला हूँ। मेरा उद्देश्य हमारे देश के युवाओं और छात्रों तक कंप्यूटर और टेक्नोलॉजी का सही ज्ञान बेहद सरल हिंदी भाषा में पहुँचाना है। इसी सोच के साथ मैंने यह कंप्यूटर ब्लॉग शुरू किया है ताकि हर कोई आसानी से सीख सके और आगे बढ़ सके।
+    </div>
 
-    <div class="container">
-        
-        <div class="profile-card">
-            <div class="profile-name">शिवाकांत चौधरी</div>
-            <div class="profile-role">संस्थापक एवं मुख्य लेखक - शिवाकांत कंप्यूटर ब्लॉग</div>
-        </div>
-
-        <h2>परिचय (About Me)</h2>
-        <p>नमस्कार! मेरा नाम <b>शिवाकांत चौधरी</b> है। मैं एक स्वतंत्र कंप्यूटर शिक्षक, तकनीकी छात्र और इस ब्लॉग का क्रिएटर हूँ। मुझे नई तकनीकों को सीखना, उनके कोड्स को समझना और सरल हिंदी भाषा में छात्रों तक पहुँचाना बेहद पसंद है। इस ब्लॉग की शुरुआत मैंने विशेष रूप से उन छात्रों की मदद करने के लिए की है जो ओ लेवल (O Level) या अन्य कंप्यूटर डिप्लोमा परीक्षाओं की तैयारी कर रहे हैं।</p>
-
-        <h2>शैक्षणिक योग्यता (Education & Background)</h2>
-        <ul>
-            <li><b>विज्ञान स्नातक (BSc Graduate)</b> - वर्ष 2019 में पूरा किया।</li>
-            <li><b>NIELIT O Level (IT Tools & Web Designing कोर्स)</b> - वर्तमान में अध्ययनरत, जिसमें HTML, CSS और वेब टेक्नोलॉजीज का गहन अभ्यास शामिल है।</li>
-            <li><b>औद्योगिक कार्य अनुभव</b> - विभिन्न सेक्टर्स (जैसे मशीन ऑपरेशन और पैकेजिंग उद्योग) में काम करने का व्यावहारिक अनुभव, जिसने मुझे कड़े अनुशासन और तकनीकी बारीकियों को समझने में मदद की।</li>
-        </ul>
-
-        <h2>ब्लॉग का मुख्य उद्देश्य (Goal of This Blog)</h2>
-        <p>अक्सर देखा जाता है कि इंटरनेट पर कंप्यूटर और वेब डिजाइनिंग से जुड़ी ज्यादातर सामग्रियां अंग्रेजी में उपलब्ध हैं, जिससे हिंदी माध्यम के छात्रों को समझने में परेशानी होती है। हमारे इस कंप्यूटर ब्लॉग का एकमात्र उद्देश्य IT Tools, HTML, इंटरनेट ऑफ थिंग्स (IoT), और साइबर सुरक्षा जैसे कठिन विषयों को *प्योर हिंदी नोट्स* और आसान उदाहरणों के साथ समझाना है, ताकि आप अपनी परीक्षाओं में शत-प्रतिशत सफलता हासिल कर सकें।</p>
-
-        <h2>हमसे जुड़ें (Contact & Support)</h2>
-        <p>यदि आपके पास हमारे नोट्स को लेकर कोई सुझाव है, या आप किसी विशेष टॉपिक पर नोट्स चाहते हैं, तो आप सीधे हमारे व्हाट्सएप सपोर्ट के जरिए हमसे जुड़ सकते हैं। आपका हर एक सुझाव हमारे लिए अमूल्य है।</p>
-
-        <div class="btn-container">
-            <a href="index.html" class="btn btn-home">← मुख्य ब्लॉग पेज पर वापस जाएं</a>
-            <a href="https://wa.me/919682204065" class="btn" target="_blank">💬 व्हाट्सएप पर संपर्क करें</a>
+    <div class="business-box">
+        <div class="business-inner">
+            <p class="business-title">🚀 डिजिटल क्रांति: आत्मनिर्भर भारत अभियान</p>
+            <p class="business-text">
+                क्या आप एक दुकानदार, प्लंबर, पेंटर, शिक्षक या व्यापारी हैं? अब कागज़ के पुराने कार्ड छोड़ें! अपने काम को सीधे इंटरनेट और लोगों के मोबाइल तक पहुँचाने के लिए अपना <b>आधुनिक डिजिटल विजिटिंग कार्ड</b> बनवाएं।
+                <br><br>
+                <span style="color: #007bff; font-size: 18px;">🔥 महा-ऑफर: मात्र ₹350 में आपका बिजनेस कार्ड लाइव!</span>
+            </p>
+            
+            <a href="card.html" class="btn-live">👉 यहाँ क्लिक करें और लाइव सैंपल देखें</a>
         </div>
     </div>
+
+    <a href="index.html" class="btn-back">← वापस कंप्यूटर नोट्स पर जाएं</a>
+</div>
 
 </body>
 </html>
