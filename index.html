@@ -22,6 +22,7 @@
         .hl-blue { color: #0056b3; font-weight: bold; background: #e6f0fa; padding: 2px 6px; border-radius: 4px; }
         .hl-green { color: #15803d; font-weight: bold; background: #f0fdf4; padding: 2px 6px; border-radius: 4px; }
         .hl-orange { color: #d97706; font-weight: bold; background: #fffbeb; padding: 2px 6px; border-radius: 4px; }
+        .hl-red { color: #b91c1c; font-weight: bold; background: #fef2f2; padding: 2px 6px; border-radius: 4px; }
         
         .code-box { background: #2d3748; color: #f7fafc; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 14px; margin: 8px 0; overflow-x: auto; }
         .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 2px solid #eee; }
@@ -46,7 +47,7 @@
             <div class="chapter-item">4. लिब्रेऑफिस कैल्क <div class="chapter-content">डेटा गणना टूल है। फाइल एक्सटेंशन <span class="hl-blue">.ods</span> है और फार्मूला <span class="hl-blue">=</span> से शुरू होता है।</div></div>
             <div class="chapter-item">5. लिब्रेऑफिस इम्प्रेस <div class="chapter-content">स्लाइड प्रेज़ेंटेशन टूल है। फाइल एक्सटेंशन <span class="hl-blue">.odp</span> और नई स्लाइड के लिए <span class="hl-blue">Ctrl + M</span> है।</div></div>
             <div class="chapter-item">6. इंटरनेट और नेटवर्क <div class="chapter-content">कंप्यूटर को नेटवर्क से जोड़ने के लिए <span class="hl-blue">IP Address</span> और वेबसाइट खोलने के लिए <span class="hl-blue">Web Browser</span> चाहिए।</div></div>
-            <div class="chapter-item">7. डिजिटल वित्तीय उपकरण <div class="chapter-content">ऑनलाइन लेनदेन के लिए <span class="hl-blue">UPI</span> और सुरक्षा के लिए <span class="hl-blue">OTP</span> जरूरी है।</div></div>
+            <div class="chapter-item">7. डिजिटल वित्तीय उपकरण <div class="chapter-content">ONLINE लेन-देन के लिए <span class="hl-blue">UPI</span> और सुरक्षा के लिए <span class="hl-blue">OTP</span> जरूरी है।</div></div>
         </div>
     </div>
 
@@ -66,50 +67,51 @@
         <div class="book-title" style="color: #fd7e14;">📙 मॉड्यूल 3: M3-R5 - Programming & Problem Solving through Python</div>
         <p style="font-weight: bold; color: #555;">पाइथन प्रोग्रामिंग के सभी महत्वपूर्ण अध्यायों का पूरा निचोड़:</p>
         <div class="chapter-list">
-            <div class="chapter-item">
-                1. पाइथन का परिचय
-                <div class="chapter-content">
-                    <span class="hl-orange">Python</span> एक सरल, हाई-लेवल और केस-सेंसिटिव भाषा है जिसका आविष्कार <span class="hl-orange">Guido van Rossum</span> ने 1991 में किया था।
-                </div>
-            </div>
-            <div class="chapter-item">
-                2. वेरिएबल्स और डेटा टाइप्स
-                <div class="chapter-content">
-                    डेटा स्टोर करने के लिए <span class="hl-orange">Variables</span> का उपयोग होता है। मुख्य डेटा टाइप्स <span class="hl-orange">int</span> (पूर्णांक), <span class="hl-orange">float</span> (दशमलव), और <span class="hl-orange">str</span> (टेक्स्ट) हैं।
-                </div>
-            </div>
-            <div class="chapter-item">
-                3. डिसीजन मेकिंग (If-Else)
-                <div class="chapter-content">
-                    शर्तों के आधार पर निर्णय लेने के लिए <span class="hl-orange">if</span>, <span class="hl-orange">elif</span>, और <span class="hl-orange">else</span> स्टेटमेंट का उपयोग किया जाता है।
-                </div>
-            </div>
-            <div class="chapter-item">
-                4. लूप्स का उपयोग (Loops)
-                <div class="chapter-content">
-                    किसी कोड को बार-बार दोहराने के लिए <span class="hl-orange">For Loop</span> और <span class="hl-orange">While Loop</span> का उपयोग करते हैं।
-                    <div class="code-box">for i in range(1, 6):<br>    print(i)</div>
-                </div>
-            </div>
-            <div class="chapter-item">
-                5. लिस्ट और टुपल (List & Tuple)
-                <div class="chapter-content">
-                    • <span class="hl-orange">List:</span> यह परिवर्तनीय (Mutable) होती है, इसे चौकोर ब्रैकेट <code>[]</code> से दर्शाते हैं।<br>
-                    • <span class="hl-orange">Tuple:</span> यहअपरिवर्तनीय (Immutable) होती है, इसे छोटे ब्रैकेट <code>()</code> से दर्शाते हैं।
-                </div>
-            </div>
-            <div class="chapter-item">
-                6. फंक्शन्स (Functions)
-                <div class="chapter-content">
-                    कोड को दोबारा इस्तेमाल करने के लिए ब्लॉक बनाया जाता है। पाइथन में फंक्शन बनाने के लिए <span class="hl-orange">def</span> कीवर्ड का उपयोग होता है।
-                </div>
-            </div>
+            <div class="chapter-item">1. पाइथन का परिचय <div class="chapter-content"><span class="hl-orange">Python</span> सरल, हाई-लेवल भाषा है। इसका आविष्कार <span class="hl-orange">Guido van Rossum</span> ने किया था।</div></div>
+            <div class="chapter-item">2. वेरिएबल्स और डेटा टाइप्स <div class="chapter-content">डेटा स्टोर करने के लिए <span class="hl-orange">Variables</span> का उपयोग होता है। मुख्य प्रकार <span class="hl-orange">int</span>, <span class="hl-orange">float</span>, और <span class="hl-orange">str</span> हैं।</div></div>
+            <div class="chapter-item">3. डिसीजन मेकिंग (If-Else) <div class="chapter-content">शर्तों के आधार पर निर्णय लेने के लिए <span class="hl-orange">if</span>, <span class="hl-orange">elif</span>, और <span class="hl-orange">else</span> का उपयोग होता है।</div></div>
+            <div class="chapter-item">4. लूप्स का उपयोग (Loops) <div class="chapter-content">कोड को दोहराने के लिए <span class="hl-orange">For Loop</span> और <span class="hl-orange">While Loop</span> काम आते हैं।</div></div>
+            <div class="chapter-item">5. लिस्ट और टुपल (List & Tuple) <div class="chapter-content"><span class="hl-orange">List</span> परिवर्तनीय (Mutable) [] होती है और <span class="hl-orange">Tuple</span> अपरिवर्तनीय (Immutable) () होती है।</div></div>
+            <div class="chapter-item">6. फंक्शन्स (Functions) <div class="chapter-content">कोड रीयूज़ के लिए फंक्शन बनाते हैं। पाइथन में इसके लिए <span class="hl-orange">def</span> कीवर्ड का उपयोग होता है।</div></div>
         </div>
     </div>
 
-    <div class="book-section" style="border-left-color: #dc3545; opacity: 0.8;">
-        <div class="book-title" style="color: #dc3545;">📓 मॉड्यूल 4: M4-R5 - Internet of Things (IoT)</div>
-        <p style="font-style: italic; color: #777;">⏳ इस किताब के आईओटी (IoT) के नोट्स अगली अपडेट में जोड़े जाएंगे...</p>
+    <div class="book-section" style="border-left-color: #dc3545;">
+        <div class="book-title" style="color: #dc3545;">📓 मॉड्यूल 4: M4-R5 - Internet of Things (IoT) and its Applications</div>
+        <p style="font-weight: bold; color: #555;">इंटरनेट ऑफ थिंग्स (IoT) के सभी महत्वपूर्ण अध्यायों का पूरा निचोड़:</p>
+        <div class="chapter-list">
+            <div class="chapter-item">
+                1. IoT का परिचय (Introduction to IoT)
+                <div class="chapter-content">
+                    <span class="hl-red">IoT (Internet of Things)</span> एक ऐसा नेटवर्क है, जहाँ भौतिक वस्तुएं इंटरनेट से जुड़कर डेटा शेयर करती हैं। इसके जनक <span class="hl-red">Kevin Ashton</span> हैं।
+                </div>
+            </div>
+            <div class="chapter-item">
+                2. सेंसर और एक्चुएटर (Sensors & Actuators)
+                <div class="chapter-content">
+                    • <span class="hl-red">Sensors:</span> बाहरी वातावरण से भौतिक जानकारी (जैसे तापमान, नमी) इकट्ठा करते हैं।<br>
+                    • <span class="hl-red">Actuators:</span> सिग्नल्स के आधार पर फिजिकल मूवमेंट या काम (जैसे मोटर चलाना) करते हैं।
+                </div>
+            </div>
+            <div class="chapter-item">
+                3. बिल्डिंग IoT सिस्टम (Arduino UNO)
+                <div class="chapter-content">
+                    <span class="hl-red">Arduino UNO</span> एक ओपन-सोर्स माइक्रोकंट्रोलर बोर्ड है, जिसका उपयोग सेंसर्स को नियंत्रित करने और कोडिंग को रन करने के लिए किया जाता है।
+                </div>
+            </div>
+            <div class="chapter-item">
+                4. प्रोटोकॉल्स (IoT Protocols)
+                <div class="chapter-content">
+                    डेटा ट्रांसफर के लिए हल्के और सुरक्षित प्रोटोकॉल्स का उपयोग होता है, जैसे <span class="hl-red">MQTT</span> (Message Queuing Telemetry Transport) और <span class="hl-red">CoAP</span>।
+                </div>
+            </div>
+            <div class="chapter-item">
+                5. सुरक्षा और सॉफ्ट स्किल्स (Security & Soft Skills)
+                <div class="chapter-content">
+                    IoT डिवाइसेज की सुरक्षा के लिए <span class="hl-red">Data Encryption</span> जरूरी है। इसके साथ ही छात्रों के व्यावसायिक विकास के लिए व्यक्तित्व और सॉफ्ट स्किल्स का ज्ञान भी आवश्यक है।
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer-nav">
