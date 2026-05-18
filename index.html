@@ -10,48 +10,83 @@
         .main-header { background: #2c3e50; color: white; text-align: center; padding: 20px; border-radius: 10px; margin-bottom: 25px; }
         .main-header h1 { margin: 0; font-size: 26px; }
         .main-header p { margin: 5px 0 0 0; color: #ff9933; font-weight: bold; }
+        
         .book-section { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 20px; border-left: 6px solid #007bff; }
         .book-title { font-size: 20px; color: #2c3e50; margin-top: 0; font-weight: bold; }
+        
         .chapter-list { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px; }
         .chapter-item { font-weight: bold; margin-bottom: 15px; color: #333; }
         .chapter-content { font-weight: normal; font-size: 15px; color: #555; margin-left: 15px; text-align: justify; }
+        
+        .code-box { background: #2d3748; color: #f7fafc; padding: 10px; border-radius: 6px; font-family: monospace; font-size: 14px; margin: 8px 0; overflow-x: auto; }
         .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 2px solid #eee; }
         .btn-about { display: inline-block; background-color: #6c757d; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; }
     </style>
 </head>
 <body>
+
 <div class="container">
     <div class="main-header">
         <h1>📚 ओ लेवल (O Level) डिजिटल लाइब्रेरी</h1>
         <p>मार्गदर्शक: शिवाकांत चौधरी (प्रयागराज)</p>
     </div>
+
     <div class="book-section" style="border-left-color: #007bff;">
         <div class="book-title" style="color: #007bff;">📘 मॉड्यूल 1: M1-R5 - IT Tools & Network Basics</div>
-        <p style="font-weight: bold; color: #555;">परीक्षा के लिए सबसे महत्वपूर्ण अध्यायों का पूरा निचोड़ नीचे पढ़ें:</p>
         <div class="chapter-list">
             <div class="chapter-item">
-                1. कंप्यूटर का परिचय (Introduction to Computer)
-                <div class="chapter-content">कंप्यूटर एक इलेक्ट्रॉनिक डिवाइस है जो यूज़र से डेटा (Input) लेता है, उसे प्रोसेस (Process) करता है और हमें सही परिणाम (Output) देता. इसके मुख्य भाग CPU, ALU, और मेमोरी यूनिट होते हैं।</div>
+                1. कंप्यूटर का परिचय और पीढ़ियां
+                <div class="chapter-content">कंप्यूटर एक इलेक्ट्रॉनिक डिवाइस है जो इनपुट लेकर प्रोसेस करता है और आउटपुट देता है। प्रथम पीढ़ी में वैक्यूम ट्यूब, द्वितीय में ट्रांजिस्टर, तृतीय में आईसी (IC) और चतुर्थ पीढ़ी में माइक्रोप्रोसेसर का उपयोग हुआ।</div>
             </div>
+        </div>
+    </div>
+
+    <div class="book-section" style="border-left-color: #28a745;">
+        <div class="book-title" style="color: #28a745;">📗 मॉड्यूल 2: M2-R5 - Web Designing & Publishing</div>
+        <p style="font-weight: bold; color: #555;">वेब डिजाइनिंग और HTML के सबसे महत्वपूर्ण नोट्स नीचे पढ़ें:</p>
+        
+        <div class="chapter-list">
             <div class="chapter-item">
-                2. कंप्यूटर की पीढ़ियां (Generations of Computer)
+                1. HTML क्या है? (Introduction to HTML)
                 <div class="chapter-content">
-                    • <b>प्रथम पीढ़ी (1940-1956):</b> वैक्यूम ट्यूब (Vacuum Tubes) का उपयोग।<br>
-                    • <b>द्वितीय पीढ़ी (1956-1963):</b> ट्रांजिस्टर (Transistors) का उपयोग।<br>
-                    • <b>तृतीय पीढ़ी (1964-1971):</b> आईसी (IC) का उपयोग।<br>
-                    • <b>चतुर्थ पीढ़ी (1971-वर्तमान):</b> माइक्रोप्रोसेसर (VLSI) का उपयोग।<br>
-                    • <b>पंचम पीढ़ी (भविष्य):</b> कृत्रिम बुद्धिमत्ता (AI) पर आधारित।
+                    HTML का पूरा नाम <b>HyperText Markup Language</b> है। इसका उपयोग वेब पेज (Web Page) का ढांचा या स्ट्रक्चर बनाने के लिए किया जाता है। यह कोई प्रोग्रामिंग भाषा नहीं है, बल्कि एक मार्कअप भाषा है जो टैग्स (Tags) पर काम करती है।
+                </div>
+            </div>
+            
+            <div class="chapter-item">
+                2. टैग और एट्रिब्यूट (HTML Tags and Attributes)
+                <div class="chapter-content">
+                    • <b>Tags:</b> HTML में कोड को कोणीय कोष्ठक <code>&lt; &gt;</code> के अंदर लिखा जाता है। जैसे: पैराग्राफ के लिए <code>&lt;p&gt;</code> और हेडिंग के लिए <code>&lt;h1&gt;</code>।<br>
+                    • <b>Attributes:</b> यह टैग के बारे में अतिरिक्त जानकारी देता है। जैसे लिंक लगाने के लिए <code>href</code> एट्रिब्यूट:
+                    <div class="code-box">&lt;a href="https://google.com"&gt;गूगल पर जाएं&lt;/a&gt;</div>
+                </div>
+            </div>
+            
+            <div class="chapter-item">
+                3. एचटीएमएल लिस्ट (HTML Lists)
+                <div class="chapter-content">
+                    वेब पेज पर लिस्ट बनाने के लिए दो मुख्य टैग होते हैं:<br>
+                    • <b>Ordered List (&lt;ol&gt;):</b> इसमें नंबर (1, 2, 3) या एबीसीडी (A, B, C) आती है।<br>
+                    • <b>Unordered List (&lt;ul&gt;):</b> इसमें बुलेट्स या डॉट्स (•) आते हैं।
                 </div>
             </div>
         </div>
     </div>
-    <div class="book-section" style="border-left-color: #28a745; opacity: 0.8;">
-        <div class="book-title" style="color: #28a745;">📗 मॉड्यूल 2: M2-R5 - Web Designing & Publishing</div>
-        <p style="font-style: italic; color: #777;">⏳ इस किताब के HTML, CSS और जावास्क्रिप्ट के नोट्स अगली अपडेट में जोड़े जाएंगे...</p>
+
+    <div class="book-section" style="border-left-color: #fd7e14; opacity: 0.8;">
+        <div class="book-title" style="color: #fd7e14;">📙 मॉड्यूल 3: M3-R5 - Programming through Python</div>
+        <p style="font-style: italic; color: #777;">⏳ इस किताब के पाइथन प्रोग्रामिंग के नोट्स अगली अपडेट में जोड़े जाएंगे...</p>
     </div>
+
+    <div class="book-section" style="border-left-color: #dc3545; opacity: 0.8;">
+        <div class="book-title" style="color: #dc3545;">📓 मॉड्यूल 4: M4-R5 - Internet of Things (IoT)</div>
+        <p style="font-style: italic; color: #777;">⏳ इस किताब के आईओटी (IoT) के नोट्स बहुत जल्द लाइव होंगे...</p>
+    </div>
+
     <div class="footer-nav">
         <a href="about.html" class="btn-about">👨‍💻 लेखक (About Me) पेज देखें</a>
     </div>
 </div>
+
 </body>
 </html>
